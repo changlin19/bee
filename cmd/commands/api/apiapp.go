@@ -71,7 +71,7 @@ var apiMaingo = `package main
 import (
 	_ "{{.Appname}}/routers"
 
-	"github.com/astaxie/beego"
+	"github.com/changlin19/beego"
 )
 
 func main() {
@@ -88,8 +88,8 @@ var apiMainconngo = `package main
 import (
 	_ "{{.Appname}}/routers"
 
-	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/orm"
+	"github.com/changlin19/beego"
+	"github.com/changlin19/beego/orm"
 	{{.DriverPkg}}
 )
 
@@ -110,7 +110,7 @@ func main() {
 var apirouter = `// @APIVersion 1.0.0
 // @Title beego Test API
 // @Description beego has a very cool tools to autogenerate documents for your API
-// @Contact astaxie@gmail.com
+// @Contact changlin19@gmail.com
 // @TermsOfServiceUrl http://beego.me/
 // @License Apache 2.0
 // @LicenseUrl http://www.apache.org/licenses/LICENSE-2.0.html
@@ -119,7 +119,7 @@ package routers
 import (
 	"{{.Appname}}/controllers"
 
-	"github.com/astaxie/beego"
+	"github.com/changlin19/beego"
 )
 
 func init() {
@@ -159,12 +159,12 @@ type Object struct {
 
 func init() {
 	Objects = make(map[string]*Object)
-	Objects["hjkhsbnmn123"] = &Object{"hjkhsbnmn123", 100, "astaxie"}
+	Objects["hjkhsbnmn123"] = &Object{"hjkhsbnmn123", 100, "changlin19"}
 	Objects["mjjkxsxsaa23"] = &Object{"mjjkxsxsaa23", 101, "someone"}
 }
 
 func AddOne(object Object) (ObjectId string) {
-	object.ObjectId = "astaxie" + strconv.FormatInt(time.Now().UnixNano(), 10)
+	object.ObjectId = "changlin19" + strconv.FormatInt(time.Now().UnixNano(), 10)
 	Objects[object.ObjectId] = &object
 	return object.ObjectId
 }
@@ -208,7 +208,7 @@ var (
 
 func init() {
 	UserList = make(map[string]*User)
-	u := User{"user_11111", "astaxie", "11111", Profile{"male", 20, "Singapore", "astaxie@gmail.com"}}
+	u := User{"user_11111", "changlin19", "11111", Profile{"male", 20, "Singapore", "changlin19@gmail.com"}}
 	UserList["user_11111"] = &u
 }
 
@@ -288,7 +288,7 @@ import (
 	"{{.Appname}}/models"
 	"encoding/json"
 
-	"github.com/astaxie/beego"
+	"github.com/changlin19/beego"
 )
 
 // Operations about object
@@ -381,7 +381,7 @@ import (
 	"{{.Appname}}/models"
 	"encoding/json"
 
-	"github.com/astaxie/beego"
+	"github.com/changlin19/beego"
 )
 
 // Operations about Users
@@ -506,7 +506,7 @@ import (
 	"path/filepath"
 	_ "{{.Appname}}/routers"
 
-	"github.com/astaxie/beego"
+	"github.com/changlin19/beego"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

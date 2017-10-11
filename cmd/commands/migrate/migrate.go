@@ -343,8 +343,8 @@ const (
 import(
 	"os"
 
-	"github.com/astaxie/beego/orm"
-	"github.com/astaxie/beego/migration"
+	"github.com/changlin19/beego/orm"
+	"github.com/changlin19/beego/migration"
 
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/lib/pq"

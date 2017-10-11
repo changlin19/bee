@@ -4,13 +4,13 @@
 	"package": [
 		{
 			"checksumSHA1": "OeOvZ+3A1tRBdMD8GuS6R9zcnqA=",
-			"path": "github.com/astaxie/beego/swagger",
+			"path": "github.com/changlin19/beego/swagger",
 			"revision": "323a1c4214101331a4b71922c23d19b7409ac71f",
 			"revisionTime": "2017-03-06T13:59:04Z"
 		},
 		{
 			"checksumSHA1": "epd3Y7nD7QVzTW0ppwK+q4pKo/4=",
-			"path": "github.com/astaxie/beego/utils",
+			"path": "github.com/changlin19/beego/utils",
 			"revision": "323a1c4214101331a4b71922c23d19b7409ac71f",
 			"revisionTime": "2017-03-06T13:59:04Z"
 		},
